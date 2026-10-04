@@ -23,3 +23,5 @@ git branch -r - shows all remote repo;
 git remote -v - shows all remote repo url;
 git rm <path_to_file> - remove file;
 git log - shows logs of all commits in this branch;
+git branch -D <name> - delete locale branch;
+git push <repo_url> --delete <name> - delete remote branch;

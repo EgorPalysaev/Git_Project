@@ -15,3 +15,4 @@ git switch <name> - Switches to an existing branch;
 git branch -M main - Renames the current branch to main; -M - forces the rename;
 git remote add origin <repository-url> - Connects your local repository to a remote online repository; remote add - adds a remote connextion; origin - is the conventional name for the remote repository;
 git restore --staged <file> - Remove the file from staged area;
+git pull --rebase origin main; --rebase - Put the locale changes above the remote changes;

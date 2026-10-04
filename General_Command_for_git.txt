@@ -17,3 +17,8 @@ git remote add origin <repository-url> - Connects your local repository to a rem
 git restore --staged <file> - Remove the file from staged area;
 git pull --rebase origin main; --rebase - Put the locale changes above the remote changes;
 git checkout -b <name> - create and enter the new branch;
+git push -u --delete <name_of_branch> - delete existing remote branch;
+git branch -a - shows all locale repo;
+git branch -r - shows all remote repo;
+git remote -v - shows all remote repo url;
+git rm <path_to_file> - remove file;

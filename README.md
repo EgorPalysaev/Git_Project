@@ -114,5 +114,7 @@ RenTrack/
 - Бизнес-логику размещать в services;
 - Код пользовательского интерфейса размещать отдельно от бизнес-логики.
 
+## UseCase-диаграмма
+![US](https://sun9-71.vkuserphoto.ru/s/v1/ig2/o_bijlGoYE2lbgOr2b-e53vBtyb7rJcP62eQrdGbS-nsRQuZbVlPf5dtS-TR2X2keEHtHupWqNy1PvE6NyhOdGVkGvpiiQ.jpg?quality=95&as=32x13,48x19,72x28,108x42,160x63,240x94,360x142,480x189,540x212,640x252,720x283,1080x425,1280x503,1440x566,1533x603&from=bu&u=poJVA3qi46wDtpSxS2VK1lU3LKqmqwY24He1pmgON1Y&cs=1533x0)	
 ## Лицензия
 Проект общего доступа и использования.

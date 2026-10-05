@@ -1,0 +1,57 @@
+@startuml
+left to right direction
+
+actor "Арендатор" as Tenant
+actor "Арендодатель" as Landlord
+
+rectangle "RenTrack" {
+    usecase "Выбор помещения" as ChoosePremises
+    usecase "Меню помещений" as MenuPremises
+    usecase "Меню арендаторов" as MenuTenants
+    usecase "Удалить арендатора" as DeleteTenants
+    usecase "Добавить арендатора" as AddTenants
+    usecase "Просмотр всех арендаторов" as AllTenants
+    usecase "Регистрация" as RegistrationTenants
+    usecase "Вход в систему" as LoginTenants
+    usecase "Вход в систему" as LoginLandlord
+    usecase "Просмотр своих аренд" as YourselfRental
+    usecase "Просмотр помещений" as ListPremises
+    usecase "Арендовать" as Rent
+    usecase "Просмотр характеристик" as LookSpecification
+    usecase "Отменить аренду" as CloseRent
+    usecase "Меню аренды" as MenuRent
+    usecase "Добавить арендодателя" as AddLandlord
+    usecase "Редактировать характеристики" as ChangeSpecification
+    usecase "Выбор помещения" as ChooseLLPremises
+    usecase "Удалить помещение" as DeletePremises
+    usecase "Добавить помещение" as AddPremises
+    usecase "Добавление характеристик" as AddSpecification
+    usecase "Добавление адреса помещения" as AddressPermises
+}
+
+LoginTenants -- ChoosePremises
+Landlord -- LoginLandlord
+LoginLandlord -- MenuPremises
+LoginLandlord -- MenuTenants
+MenuTenants -- AddTenants
+MenuTenants -- DeleteTenants
+MenuTenants -- AllTenants
+Tenant -- RegistrationTenants
+Tenant -- LoginTenants
+LoginTenants -- YourselfRental
+ChoosePremises -- Rent
+ChangeSpecification ..> LookSpecification : <<include>>
+MenuRent -- CloseRent
+LoginLandlord -- MenuRent
+LoginLandlord -- AddLandlord
+ChooseLLPremises -- ChangeSpecification
+MenuPremises -- ChooseLLPremises
+ChooseLLPremises -- DeletePremises
+MenuPremises -- AddPremises
+AddPremises ..> AddSpecification : <<include>>
+AddPremises ..> AddressPermises : <<include>>
+DeleteTenants ..> AllTenants : <<include>>
+ChoosePremises ..> ListPremises : <<include>>
+ChooseLLPremises ..> ListPremises : <<include>>
+ListPremises ..> LookSpecification : <<include>>
+@enduml

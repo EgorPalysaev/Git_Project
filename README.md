@@ -97,7 +97,7 @@ RenTrack/
 ### Клонирование репозитория
 ```
 git clone https://github.com/EgorPalysaev/RenTrack.git
-cd RenTrach
+cd RenTrack/
 ```
 ## Запуск приложения
 Из корневой папки выполните:  

@@ -1,5 +1,5 @@
 --CREATE DATABASE data;
-PRAGMA foreign_keys = ON;
+--PRAGMA foreign_keys = ON;
 
 DROP TABLE IF EXISTS `user_name`;
 DROP TABLE IF EXISTS `role_name`;

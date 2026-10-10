@@ -40,7 +40,7 @@ RenTrack/
 │   ├── rentrack.h
 │   └── test_main.c
 │        
-├── .gitignore                  # Исключения для Git│
+├── .gitignore                  # Исключения для Git
 ├── .git/
 ├── README.md                   # Документация проекта
 └── requirements.txt            # Зависимости проекта
